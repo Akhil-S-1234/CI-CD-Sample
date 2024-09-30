@@ -11,7 +11,7 @@ afterAll((done) => {
 describe('GET /api/hello', ()=>{
 
     it('should return a greeting message ', async ()=>{
-        const res = await request(server).get('api/hello')
+        const res = await request(server).get('/api/hello')
         expect(res.statusCode).toEqual(200)
         expect(res.body.message).toBe('Hello, World... ha haa..')
     })

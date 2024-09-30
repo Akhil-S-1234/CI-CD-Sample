@@ -9,7 +9,7 @@ app.get('/api/hello', (req,res)=>{
     res.json({message : "Hello, World... ha haa.."})
 })
 
-app.post('api/greet',(req,res)=>{
+app.post('/api/greet',(req,res)=>{
     const {name} = req.body;
     res.json({ message : `hello, ${name}`})
 })
@@ -17,3 +17,5 @@ app.post('api/greet',(req,res)=>{
 app.listen(PORT, ()=>{
     console.log(`Server is running  on http://localhost:${PORT}`)
 })
+
+module.exports = app;
