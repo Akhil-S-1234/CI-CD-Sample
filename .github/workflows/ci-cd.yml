@@ -28,10 +28,10 @@ jobs:
     - name: Run tests
       run: npm test
 
-    - name: Build
-      run: echo "No build step required for this project" # Change if you have a build step
+    # - name: Build
+    #   run: echo "No build step required for this project" # Change if you have a build step
 
-    - name: Deploy
-      run: |
-        echo "Deploying to production..."
-        # Add your deployment script/commands here
+    # - name: Deploy
+    #   run: |
+    #     echo "Deploying to production..."
+    #     # Add your deployment script/commands here
